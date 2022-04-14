@@ -13,7 +13,6 @@ python -u run.py \
     --save_dir checkpoints/KTH/CPL_base/test/ \
     --gen_frm_dir results/KTH/CPL_base/test/ \
     --tensorboard_dir SummaryDir/KTH/CPL_base/test/ \
-    --early_stopping_interval 4 \
     --model_name CPL_base \
     --reverse_input 0 \
     --img_channel 1 \
