@@ -34,7 +34,7 @@ def CPL_train(model,pre_model, ims, real_input_flag, configs, itr,category,is_re
     
     if itr % configs.display_interval == 0:
         print(datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') , 'itr: '+str(itr))
-        print('loss: ' + str(cost) + ', pd: ' + str(cost_pd) +',recon'+str(loss_recon)+ ', kl: ' + str(cost_kl)+ ', cat: ' + str(cost_cat))
+        print('loss: ' + str(cost) + ', pd: ' + str(cost_pd) +',recon'+str(loss_recon)+ ', kl: ' + str(cost_kl))
     return cost
 
 def test(model, test_input_handle, configs, itr,category=None):
