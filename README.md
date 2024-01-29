@@ -1,8 +1,8 @@
-# CPL: Continual Predictive Learning from Videos
-A PyTorch implementation of our paper: Continual Predictive Learning from Videos. (The code is a bit messy right now, we will provide a cleaner version in the future.)
+# CPL: Continual Predictive Learning from Videos (CVPR 2022 Oral)
+A PyTorch implementation of our paper: Continual Predictive Learning from Videos. 
 
 ## Introduction
-In this paper, we study a new continual learning problem in
+In this [[paper]](https://arxiv.org/abs/2204.05624), we study a new continual learning problem in
 the context of video prediction, and observe that most existing methods suffer from severe catastrophic forgetting in
 this setup. To tackle this problem, we propose the continual
 predictive learning (CPL) approach, which learns a mixture world model via predictive experience replay and performs test-time adaptation with non-parametric task inference.  Our approach is shown to effectively mitigate forgetting and remarkably outperform the naïve combinations of previous
@@ -24,6 +24,9 @@ sh train.sh
 cd script/
 sh train_base.sh
 ```
+
+## Follow-up Work
+We extended CPL for continual model-based RL. [[paper]](https://arxiv.org/abs/2303.06572) [[code]](https://github.com/WendongZh/continual_visual_control)
 
 ## Acknowledgement
 We appreciate the following github repos where we borrow code from:
